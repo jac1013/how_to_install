@@ -140,7 +140,7 @@ note: _tilde_ (__~__) means __/home/your_username/__
 <a name="PostgreSQL"/>
 ## PostgreSQL
 
-To download the latest postgresql version you will have to update your PPA before from the CLI:
+To download the latest postgresql version you will have to update your __PPA__ before from the CLI:
 
     $ wget --quiet -O - https://www.postgresql.org/media/keys/ACCC4CF8.asc | \
     sudo apt-key add -
@@ -150,7 +150,7 @@ To download the latest postgresql version you will have to update your PPA befor
 
 The information of the PPA it's from [here](http://www.ubuntuupdates.org/ppa/postgresql)
 
-After this you won't be able to do anything because only 'postgres' user can, but it has no password :D, let's fix this:
+After this you won't be able to do anything because only _postgres_ user can, but it has no password :D, let's fix this:
 
     $ sudo -u postgres createuser -s $USER
 
@@ -164,7 +164,7 @@ To allow postgresql to receive remote connections you will have to go to:
 
 ```/etc/postgresql/9.3/main``` __this location may vary__ and modify 2 files
 
-#postgresql.conf:
+###postgresql.conf:
 
 this: 
 ```#listen_addresses = 'localhost'```
@@ -172,7 +172,7 @@ this:
 for this:
 ```#listen_addresses = '*'```
 
-#pg_hba:
+###pg_hba:
 
 this:
 ```host    all             all             127.0.0.1/32          md5```
