@@ -35,17 +35,6 @@
 * [SqliteBrowser](#SqliteBrowser)
 * [Xdotool](#Xdotool)
 
-### Well not everything is about programming.
-
-* [Stelarium](#Stelarium)
-* [Solfege](#Solfege)
-* [TeeWorlds](#TeeWorlds)
-* [Wine](#Wine)
-* [VLC](#VLC)
-* [Cairo-dock](#Cairo-dock)
-* [Transmission](#Transmission)
-* [Skype](#Skype)
-
 ## How To Install.
 
 <a name="Git"/>
@@ -109,6 +98,13 @@ To test something from the CLI (_While the server is running do this in another 
     
 ---------------------------------------------------------------------------------
 
+
+<a name="MongoDB"/>
+## MongoDB
+
+---------------------------------------------------------------------------------
+
+
 <a name="Java_1.7"/>
 ## Java (Same apply for other versions)
 
@@ -141,8 +137,59 @@ note: _tilde_ (__~__) means __/home/your_username/__
     
 ---------------------------------------------------------------------------------
 
-    
+<a name="PostgreSQL"/>
+## PostgreSQL
 
+To download the latest postgresql version you will have to update your PPA before from the CLI:
+
+    $ wget --quiet -O - https://www.postgresql.org/media/keys/ACCC4CF8.asc | \
+    sudo apt-key add -
+    $ sudo sh -c 'echo "deb http://apt.postgresql.org/pub/repos/apt/ precise-pgdg main" >> /etc/apt/sources.list.d/postgresql.list'
+    $ sudo apt-get update
+    $ sudo apt-get postgresql-9.3
+
+The information of the PPA it's from [here](http://www.ubuntuupdates.org/ppa/postgresql)
+
+After this you won't be able to do anything because only 'postgres' user can, but it has no password :D, let's fix this:
+
+    $ sudo -u postgres createuser -s $USER
+
+This will create your unix user as a role in template1 database but you won't be able to psql yet, you have to create a database with your username like this:
+
+    $ createdb $USER
+
+After this you will be able to do ```$ psql``` with your unix user.
+
+To allow postgresql to receive remote connections you will have to go to:
+
+```/etc/postgresql/9.3/main``` __this location may vary__ and modify 2 files
+
+#postgresql.conf:
+
+this: 
+```#listen_addresses = 'localhost'```
+
+for this:
+```#listen_addresses = '*'```
+
+#pg_hba:
+
+this:
+```host    all             all             127.0.0.1/32          md5```
+
+for this:
+```host    all             all             0.0.0.0/32            md5```
+
+```0.0.0.0``` means any IP direction can login, you will probably use a range here depending on your needs. 
+
+---------------------------------------------------------------------------------
+
+<a name="PGAdmin3"/>
+## PGAdmin3
+
+    $ sudo apt-get install pgadmin3
+
+---------------------------------------------------------------------------------
 
     
 
