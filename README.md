@@ -249,6 +249,21 @@ If it prompt you with something related to OpenJDK then follow the steps to conf
 
 ---------------------------------------------------------------------------------
 
+<a name="IntellijIdea"/>
+## IntellijIdea
+
+Download [IntelliJIdea](http://www.jetbrains.com/idea/download/)
+
+Decompress what you've downloaded like this (numbers change depending on version):
+
+    $ tar -zxvf ideaIC-13.1.2.tar.gz
+    $ sh ideaIC-13.1.2/bin/idea.sh
+
+If it prompt you with something related to OpenJDK then follow the steps to configure oracle's java [here](Java_1.7).
+
+---------------------------------------------------------------------------------
+
+
 
     
 
