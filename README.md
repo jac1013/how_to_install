@@ -70,7 +70,7 @@ Lastly type:
 
     $ node -v
     
-It should show you the version of nodejs you just installed.
+It should show you the version of nodejs you just installed (this install __npm__ too).
  
 For other ways go here: [joyent_node](https://github.com/joyent/node/wiki/installation)
 
@@ -306,6 +306,19 @@ Decompress what you've downloaded like this (numbers change depending on version
     $ eclipse/eclipse
 
 ---------------------------------------------------------------------------------
+
+<a name="SublimeText2"/>
+## SublimeText2
+
+Download [SublimeText2](http://www.sublimetext.com/2) 
+
+Decompress what you've downloaded like this (numbers change depending on version):
+
+    $ tar -jxvf ../Sublime\ Text\ 2.0.2\ x64.tar.bz2
+
+
+---------------------------------------------------------------------------------
+
 
 
 
