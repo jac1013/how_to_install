@@ -295,6 +295,19 @@ If it prompt you with something related to OpenJDK then follow the steps to conf
 
 ---------------------------------------------------------------------------------
 
+<a name="Eclipse"/>
+## Eclipse
+
+Download [Eclipse](https://www.eclipse.org/downloads/)
+
+Decompress what you've downloaded like this (numbers change depending on version):
+
+    $ tar -zxvf eclipse-standard-kepler-SR2-linux-gtk-x86_64.tar.gz 
+    $ eclipse/eclipse
+
+---------------------------------------------------------------------------------
+
+
 
 
     
