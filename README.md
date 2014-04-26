@@ -235,5 +235,21 @@ then follow the instructions [here](http://askubuntu.com/questions/19127/how-to-
 
 ---------------------------------------------------------------------------------
 
+<a name="Android_Studio"/>
+## Android Studio
+
+Download [Android Studio](http://developer.android.com/sdk/installing/studio.html#download).
+
+Decompress what you've downloaded like this (numbers change depending on version):
+
+    $ tar -zxvf android-studio-bundle-133.1028713-linux.tgz
+    $ sh android-studio/bin/studio.sh
+
+If it prompt you with something related to OpenJDK then follow the steps to configure oracle's java [here](Java_1.7).
+
+
+---------------------------------------------------------------------------------
+
+
     
 
