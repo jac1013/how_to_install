@@ -212,8 +212,26 @@ We have to restart the server to see the changes:
 
 Finally you will be able to:
 
-    $ mysql
+    $ mysql -p
+    $ Enter password:
     $ mysql>
+
+Concerning to this issue [error: 'Can't connect to local MySQL server through socket '/var/run/mysqld/mysqld.sock'](http://stackoverflow.com/questions/11990708/error-cant-connect-to-local-mysql-server-through-socket-var-run-mysqld-mysq)
+When I miself encounter this I did ``` $ sudo find / -type sd``` and didn't found a socket for mysql, I solve this restarting
+the system and then the socket was there, after that I just modify the ```/etc/mysql/my.cnf``` file to match the socket I found
+in ``` $ sudo find / -type sd``` and the issue was solved.
+
+---------------------------------------------------------------------------------
+
+<a name="PHPMyAdmin"/>
+## PHPMyAdmin
+
+    $ sudo apt-get install phpmyadmin
+
+Note: if you are a begginer let phpmyadmin configure the database it will use itself.
+
+If you go to [http://localhost/phpmyadmin](http://localhost/phpmyadmin) and you can't see phpmyadmin
+then follow the instructions [here](http://askubuntu.com/questions/19127/how-to-access-phpmyadmin-after-installation)
 
 ---------------------------------------------------------------------------------
 
