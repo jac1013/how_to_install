@@ -263,6 +263,44 @@ If it prompt you with something related to OpenJDK then follow the steps to conf
 
 ---------------------------------------------------------------------------------
 
+<a name="Gradle"/>
+## Gradle
+
+---------------------------------------------------------------------------------
+
+<a name="Maven"/>
+## Maven
+
+---------------------------------------------------------------------------------
+
+<a name="Netbeans"/>
+## Netbeans
+
+Download [Netbeans](https://netbeans.org/downloads/)
+
+    $ sh netbeans-8.0-linux.sh
+    $ ~/netbeans-8.0/bin/netbeans
+
+If it prompt you with something related to OpenJDK then follow the steps to configure oracle's java [here](Java_1.7).
+
+---------------------------------------------------------------------------------   
+
+<a name="Glassfish"/>
+## Glassfish
+
+---------------------------------------------------------------------------------
+
+<a name="Tomcat"/>
+## Tomcat
+
+---------------------------------------------------------------------------------
+
+
+
+    
+
+
+
 
 
     
