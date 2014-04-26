@@ -247,7 +247,6 @@ Decompress what you've downloaded like this (numbers change depending on version
 
 If it prompt you with something related to OpenJDK then follow the steps to configure oracle's java [here](Java_1.7).
 
-
 ---------------------------------------------------------------------------------
 
 
