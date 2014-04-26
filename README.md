@@ -191,5 +191,31 @@ for this:
 
 ---------------------------------------------------------------------------------
 
+<a name="MySQL"/>
+## MySQL
+
+    $ sudo apt-get install mysql-client
+    $ sudo apt-get install mysql-server
+
+Then we will log in as root:
+
+    $ mysql -u root -p
+
+After this we will add our unix user to mysql roles:
+
+    $ mysql> CREATE USER 'your_user'@'localhost' IDENTIFIED BY 'some_pass';
+    $ mysql> GRANT ALL PRIVILEGES ON *.* TO 'monty'@'localhost' WITH GRANT OPTION;
+
+We have to restart the server to see the changes:
+
+    $  sudo /etc/init.d/mysql restart
+
+Finally you will be able to:
+
+    $ mysql
+    $ mysql>
+
+---------------------------------------------------------------------------------
+
     
 
