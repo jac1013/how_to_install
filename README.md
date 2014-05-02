@@ -266,6 +266,41 @@ If it prompt you with something related to OpenJDK then follow the steps to conf
 <a name="Gradle"/>
 ## Gradle
 
+Download [Gradle](http://www.gradle.org/downloads)
+
+Decompress what you've downloaded like this (number change depending on version):
+
+    $ unzip gradle-1.12-all.zip
+
+In case you don't have unzip do this first:
+
+    $ sudo apt-get install unzip
+
+Create an enviroment variable for gradle in your ```.bashrc``` or ```.zshrc``` file like this:
+
+    ```export PATH="your_gradle_directory/bin:$PATH"
+
+Lastly type:
+
+    $ gradle -v
+    
+      ------------------------------------------------------------
+      Gradle 1.12
+      ------------------------------------------------------------
+
+      Build time:   2014-04-29 09:24:31 UTC
+      Build number: none
+      Revision:     a831fa866d46cbee94e61a09af15f9dd95987421
+
+      Groovy:       1.8.6
+      Ant:          Apache Ant(TM) version 1.9.3 compiled on December 23 2013
+      Ivy:          2.2.0
+      JVM:          1.7.0_55 (Oracle Corporation 24.55-b03)
+      OS:           Linux 3.11.0-12-generic amd64
+
+
+It should show the output above, for more information go to gradle's [documantion](http://www.gradle.org/docs/current/userguide/userguide_single.html).
+
 ---------------------------------------------------------------------------------
 
 <a name="Maven"/>
