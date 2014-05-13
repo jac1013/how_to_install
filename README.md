@@ -70,7 +70,11 @@ Lastly type:
 
     $ node -v
     
-It should show you the version of nodejs you just installed (this install __npm__ too).
+It should show you the version of nodejs you just installed.
+
+After this you have to reinstall your g++ compiler to the current version with this:
+
+    $ sudo apt-get install build-essential g++
  
 For other ways go here: [joyent_node](https://github.com/joyent/node/wiki/installation)
 
