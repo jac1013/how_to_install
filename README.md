@@ -95,6 +95,19 @@ To test something from the CLI (_While the server is running do this in another 
     $ redis-cli
     $ set Hello World
     $ get Hello
+
+And issue that happen to me was this:
+
+    WARNING overcommit_memory is set to 0! Background save may fail under low memory condition. 
+    To fix this issue add 'vm.overcommit_memory = 1' to /etc/sysctl.conf and then reboot or run the 
+    command 'sysctl vm.overcommit_memory=1' for this to take effect.
+
+I fix it doing the following as the error says via cli:
+
+    $ sudo sysctl vm.overcommit_memory=1
+
+You could modify the file specify in the error too (I did but didn't work for me).
+
     
 ---------------------------------------------------------------------------------
 
