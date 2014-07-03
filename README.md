@@ -47,7 +47,7 @@
 <a name="Node.js"/>
 ## Node.js
 
-Download [nodejs](nodejs.org) then go to the folder where your tar.gz is and
+Download [nodejs](www.nodejs.org) then go to the folder where your tar.gz is and
 __Replacing the X's with the version number you downloaded__ do this:
 
     $ tar -zxf node-v0.xx.xx.tar.gz 
@@ -163,7 +163,7 @@ To download the latest postgresql version you will have to update your __PPA__ b
     sudo apt-key add -
     $ sudo sh -c 'echo "deb http://apt.postgresql.org/pub/repos/apt/ precise-pgdg main" >> /etc/apt/sources.list.d/postgresql.list'
     $ sudo apt-get update
-    $ sudo apt-get postgresql-9.3
+    $ sudo apt-get install postgresql-9.3
 
 The information of the PPA it's from [here](http://www.ubuntuupdates.org/ppa/postgresql)
 
