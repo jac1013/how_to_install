@@ -47,7 +47,7 @@
 <a name="Node.js"/>
 ## Node.js
 
-Download [nodejs](www.nodejs.org) then go to the folder where your tar.gz is and
+Download [nodejs](http://nodejs.org) then go to the folder where your tar.gz is and
 __Replacing the X's with the version number you downloaded__ do this:
 
     $ tar -zxf node-v0.xx.xx.tar.gz 
